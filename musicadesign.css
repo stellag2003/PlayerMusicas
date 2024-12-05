@@ -1,0 +1,110 @@
+
+body
+{
+background-image: linear-gradient(/* tie die */
+    rgb(16, 88, 160),
+    rgb(133, 152, 180));
+    height: 100vh; /* o body esta preenchendo a tela inteira, por padrao ele nao vem preenchido */
+    color: white;
+    font-family:sans-serif;
+    display: flex; /* mesmo q a tela diminua ou expanda, os elementos da tela seguirao o tamanho, aumentando ou diminuindo */
+    flex-direction: column; /* deixa a disposição dos elementos em colunas */
+    align-items: center;
+}
+button
+{
+   background-color: inherit;
+   color: inherit;
+   border: none;
+
+}
+
+#debaixo 
+{
+    display: flex; /* mesmo q a tela diminua ou expanda, os elementos da tela seguirao o tamanho, aumentando ou diminuindo */
+    flex-direction: row; /* padrao */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#botoes
+{
+    display: flex; /* mesmo q a tela diminua ou expanda, os elementos da tela seguirao o tamanho, aumentando ou diminuindo */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.button
+{
+
+   font-size:1.5em;
+
+}
+
+.button-navigate
+{
+    font-size:3em;
+}
+
+.button-biggest
+{
+   font-size:4em;
+}
+
+#capa
+{
+  width: 400px;
+  height: 350px;
+  
+}
+
+#titulo
+{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 4em 0;
+
+}
+
+#nomemusica
+{
+    font-size: 1.7em;
+    font-weight:bolder ;
+
+}
+
+.cor_clara
+{
+    color:rgb(201, 214, 218);
+    
+}
+
+#progresso
+{
+    background-color:rgb(201, 214, 218);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px; /* deixa a borda da barra redondinha*/
+    
+}
+
+#mudancaBarra
+{
+    --progresso: 0%;
+    background-color:white;
+    height:inherit; /* herdou a altura do #progresso. pos é uma div filha*/
+    width:var(--progresso);
+    border-radius: inherit;
+}
+
+#contemProgresso
+{
+    padding-bottom: 1em;
+}
+
+.embaralha
+{
+   color: rgb(rgb(32, 196, 32)); 
+}
